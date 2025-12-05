@@ -56,6 +56,6 @@
   <!-- vendor -->
   <project path="vendor/lineage" name="platform_vendor_lumine" remote="lumine" />
   <project path="vendor/lumine" name="platform_vendor_lumine" remote="lumine" revision="bynx-lumine" />
-  <project path="vendor/pixel/gms" name="PixelOS-AOSP/proprietary_vendor_pixel_gms" remote="gitlab" revision="sixteen" />
+  <project path="vendor/pixel_gms" name="luminedroid/proprietary_vendor_pixel_gms" remote="gitlab" revision="bynx" />
   <project path="vendor/pixel/sounds" name="PixelOS-AOSP/proprietary_vendor_pixel_sounds" remote="gitlab" revision="sixteen" />
 </manifest>
