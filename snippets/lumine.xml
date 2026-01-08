@@ -95,6 +95,7 @@
   <project path="packages/apps/ContactsPicker" name="platform_packages_apps_ContactsPicker" remote="lumine" />
   <project path="packages/apps/DocumentsUI" name="platform_packages_apps_DocumentsUI" remote="lumine" />
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="lumine" />
+  <project path="packages/apps/LumineSettings" name="platform_packages_apps_LumineSettings" remote="lumine" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="lumine" />
   <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="lumine" />
   <project path="packages/apps/TV" name="platform_packages_apps_TV" remote="lumine" />
