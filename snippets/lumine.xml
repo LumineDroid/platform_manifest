@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- root -->
+  <project path="bionic" name="platform_bionic" remote="lumine" />
+  <project path="development" name="platform_development" remote="lumine" />
+  <project path="kernel/configs" name="platform_kernel_configs" remote="lumine" />
+  <project path="manifest" name="platform_manifest" remote="lumine" />
+  <project path="official_devices" name="official_devices" remote="lumine-devices" />
+
+  <!-- build -->
+  <project path="build/make" name="platform_build" remote="lumine" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/release" name="platform_build_release" remote="lumine" />
+  <project path="build/soong" name="platform_build_soong" remote="lumine" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- bootable -->
+  <project path="bootable/deprecated-ota" name="platform_bootable_deprecated-ota" remote="lumine" />
+  <project path="bootable/recovery" name="platform_bootable_recovery" remote="lumine" />
+
+  <!-- device -->
+  <project path="device/lumine/sepolicy" name="platform_device_lumine_sepolicy" remote="lumine" />
+
+  <!-- external -->
+  <project path="external/ant-wireless/hidl" name="platform_external_ant-wireless_hidl" groups="qcom,qssi" remote="lumine" />
+  <project path="external/dng_sdk" name="platform_external_dng_sdk" groups="pdk" remote="lumine"/>
+  <project path="external/dtc" name="platform_external_dtc" groups="pdk" remote="lumine" />
+  <project path="external/exfatprogs" name="platform_external_exfatprogs" remote="lumine" />
+  <project path="external/libjxl" name="platform_external_libjxl" groups="pdk" remote="lumine"/>
+  <project path="external/tinycompress" name="platform_external_tinycompress" groups="pdk" remote="lumine" />
+  <project path="external/bouncycastle" name="platform_external_bouncycastle" remote="lumine" />
+  <project path="external/e2fsprogs" name="platform_external_e2fsprogs" remote="lumine" />
+  <project path="external/gptfdisk" name="platform_external_gptfdisk" remote="lumine" />
+  <project path="external/mksh" name="platform_external_mksh" remote="lumine" />
+  <project path="external/wpa_supplicant_8" name="platform_external_wpa_supplicant_8" remote="lumine" />
+  <project path="external/sqlite" name="platform_external_sqlite" remote="lumine" />
+  <project path="external/zstd" name="platform_external_zstd" remote="lumine" />
+
+  <!-- frameworks -->
+  <project path="frameworks/av" name="platform_frameworks_av" remote="lumine" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="lumine" />
+  <project path="frameworks/libs/systemui" name="platform_frameworks_libs_systemui" remote="lumine" />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="lumine" />
+
+  <!-- hardware -->
+  <project path="hardware/google/interfaces" name="platform_hardware_google_interfaces" groups="pdk,sysui-studio" remote="lumine"/>
+  <project path="hardware/google/pixel" name="platform_hardware_google_pixel" groups="generic_fs,pixel,pdk-gs-arm,pdk-gs-imgtec,pdk-desktop" remote="lumine" />
+  <project path="hardware/google/pixel-sepolicy" name="platform_hardware_google_pixel-sepolicy" groups="generic_fs,pixel,pdk-desktop" remote="lumine" />
+  <project path="hardware/interfaces" name="platform_hardware_interfaces" remote="lumine" />
+  <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="lumine" />
+  <project path="hardware/lineage/compat" name="platform_hardware_lineage_compat" remote="lumine"/>
+  <project path="hardware/lineage/interfaces" name="platform_hardware_lineage_interfaces" remote="lumine"/>
+  <project path="hardware/qcom-caf/common" name="platform_hardware_qcom-caf_common" groups="qcom" remote="lumine">
+    <!-- add guard for AOSP hardware/qcom dir -->
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <!-- add guards for CAF repositories -->
+    <linkfile src="os_pickup_sepolicy_vndr.mk" dest="device/qcom/sepolicy_vndr/SEPolicy.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8953/Android.bp" />
+    <!--
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
+    -->
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm660/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm6225/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450-6.6/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8750/Android.bp" />
+  </project>
+
+  <!-- packages -->
+  <project path="packages/apps/DocumentsUI" name="platform_packages_apps_DocumentsUI" remote="lumine" />
+  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="lumine" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="lumine" />
+  <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="lumine" />
+  <project path="packages/apps/Updater" name="platform_packages_apps_Updater" remote="lumine" />
+  <project path="packages/apps/WallpaperPicker2" name="platform_packages_apps_WallpaperPicker2" remote="lumine" />
+  <project path="packages/modules/adb" name="platform_packages_modules_adb" remote="lumine" />
+  <project path="packages/modules/Bluetooth" name="platform_packages_modules_Bluetooth" remote="lumine" />
+  <project path="packages/modules/Connectivity" name="platform_packages_modules_Connectivity" remote="lumine" />
+  <project path="packages/modules/Nfc" name="platform_packages_modules_Nfc" remote="lumine" />
+  <project path="packages/modules/UprobeStats" name="platform_packages_modules_UprobeStats" remote="lumine" />
+  <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="lumine" />
+  <project path="packages/services/Telephony" name="platform_packages_services_Telephony" remote="lumine" />
+
+  <!-- system -->
+  <project path="system/bpf" name="platform_system_bpf" remote="lumine" />
+  <project path="system/chre" name="platform_system_chre" remote="lumine" />
+  <project path="system/core" name="platform_system_core" remote="lumine" />
+  <project path="system/extras" name="platform_system_extras" remote="lumine" />
+  <project path="system/fs/fs_mgr" name="platform_system_fs_fs_mgr" remote="lumine" />
+  <project path="system/keymaster" name="platform_system_keymaster" remote="lumine" />
+  <project path="system/logging" name="platform_system_logging" remote="lumine" />
+  <project path="system/media" name="platform_system_media" remote="lumine" />
+  <project path="system/security" name="platform_system_security" remote="lumine" />
+  <project path="system/sepolicy" name="platform_system_sepolicy" remote="lumine" />
+  <project path="system/update_engine" name="platform_system_update_engine" remote="lumine" />
+  <project path="system/vold" name="platform_system_vold" remote="lumine" />
+
+  <!-- vendor -->
+  <project path="vendor/apn" name="platform_vendor_apn" revision="main" remote="lumine"/>
+  <project path="vendor/extra" name="platform_vendor_extra" remote="lumine" />
+  <project path="vendor/lumine" name="platform_vendor_lumine" remote="lumine" />
+  <project path="vendor/pixel/extract-utils" name="platform_vendor_pixel_extract-utils" remote="lumine-codeberg" >
+    <linkfile src="extract-all.py" dest="vendor/pixel/extract-all.py" />
+  </project>
+  <project path="vendor/pixel/clocks" name="platform_vendor_pixel_clocks" remote="lumine-codeberg" />
+  <project path="vendor/pixel/gms" name="platform_vendor_pixel_gms" remote="lumine-codeberg" />
+  <project path="vendor/pixel/prebuilts" name="platform_vendor_pixel_prebuilts" remote="lumine-codeberg" />
+  <project path="vendor/pixel/sounds" name="platform_vendor_pixel_sounds" remote="lumine-codeberg" />
+  <project path="vendor/products" name="platform_vendor_products" remote="lumine-devices" />
+</manifest>

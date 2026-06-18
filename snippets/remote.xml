@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- LumineDroid -->
+  <remote name="lumine"
+          fetch="https://github.com/LumineDroid/"
+          revision="camellia" />
+
+  <remote name="lumine-codeberg"
+          fetch="https://codeberg.org/LumineDroid"
+          revision="camellia" />
+
+  <remote name="lumine-devices"
+          fetch="https://github.com/LumineDroid-Devices"
+          revision="camellia" />
+
+  <!-- LineageOS -->
+  <remote name="lineage"
+          fetch="https://github.com/" 
+          revision="lineage-23.2" />
+
+  <!-- Github -->
+  <remote name="github"
+          fetch="https://github.com/" />
+
+  <!-- Gitlab -->
+  <remote name="gitlab"
+          fetch="https://gitlab.com/" />
+
+</manifest>
