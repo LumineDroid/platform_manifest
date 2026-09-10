@@ -13,6 +13,7 @@
   <remove-project name="device/sample" />
 
   <!-- root -->
+  <remove-project name="platform/art" />
   <remove-project name="platform/bionic" />
   <remove-project name="platform/development" />
 
@@ -31,8 +32,13 @@
   <remove-project name="platform/external/dtc" />
   <remove-project name="platform/external/exfatprogs" />
   <remove-project name="platform/external/e2fsprogs" />
+  <remove-project name="platform/external/freetype" />
   <remove-project name="platform/external/gptfdisk" />
+  <remove-project name="platform/external/libcupsfilters" />
+  <remove-project name="platform/external/libhevc" />
   <remove-project name="platform/external/libjxl" />
+  <remove-project name="platform/external/libpng" />
+  <remove-project name="platform/external/libppd" />
   <remove-project name="platform/external/mksh" />
   <remove-project name="platform/external/sqlite" />
   <remove-project name="platform/external/tinycompress" />
@@ -49,21 +55,30 @@
   <remove-project name="platform/hardware/google/interfaces" />
   <remove-project name="platform/hardware/libhardware" />
   <remove-project name="platform/hardware/interfaces" />
+  <remove-project name="platform/hardware/nxp/secure_element" />
+  <remove-project name="platform/hardware/st/nfc" />
 
   <!-- kernel -->
   <remove-project name="kernel/configs" />
 
   <!-- packages -->
+  <remove-project name="platform/packages/apps/ContactsPicker" />
   <remove-project name="platform/packages/apps/DocumentsUI" />
   <remove-project name="platform/packages/apps/Launcher3" />
   <remove-project name="platform/packages/apps/Settings" />
   <remove-project name="platform/packages/apps/ThemePicker" />
+  <remove-project name="platform/packages/apps/TV" />
   <remove-project name="platform/packages/apps/WallpaperPicker2" />
   <remove-project name="platform/packages/modules/adb" />
   <remove-project name="platform/packages/modules/Bluetooth" />
   <remove-project name="platform/packages/modules/Connectivity" />
   <remove-project name="platform/packages/modules/Nfc" />
   <remove-project name="platform/packages/modules/UprobeStats" />
+  <remove-project name="platform/packages/modules/Uwb" />
+  <remove-project name="platform/packages/modules/Wifi" />
+  <remove-project name="platform/packages/providers/ContactsProvider" />
+  <remove-project name="platform/packages/providers/MediaProvider" />
+  <remove-project name="platform/packages/providers/TelephonyProvider" />
   <remove-project name="platform/packages/services/Telecomm" />
   <remove-project name="platform/packages/services/Telephony" />
 

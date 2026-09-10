@@ -2,6 +2,7 @@
 <manifest>
 
   <!-- root -->
+  <project path="art" name="platform_art" remote="lumine" />
   <project path="bionic" name="platform_bionic" remote="lumine" />
   <project path="development" name="platform_development" remote="lumine" />
   <project path="kernel/configs" name="platform_kernel_configs" remote="lumine" />
@@ -35,7 +36,12 @@
   <project path="external/dng_sdk" name="platform_external_dng_sdk" groups="pdk" remote="lumine"/>
   <project path="external/dtc" name="platform_external_dtc" groups="pdk" remote="lumine" />
   <project path="external/exfatprogs" name="platform_external_exfatprogs" remote="lumine" />
+  <project path="external/freetype" name="platform_external_freetype" remote="lumine" />
+  <project path="external/libcupsfilters" name="platform_external_libcupsfilters" remote="lumine" />
+  <project path="external/libhevc" name="platform_external_libhevc" remote="lumine" />
   <project path="external/libjxl" name="platform_external_libjxl" groups="pdk" remote="lumine"/>
+  <project path="external/libpng" name="platform_external_libpng" remote="lumine" /> 
+  <project path="external/libppd" name="platform_external_libppd" remote="lumine" />
   <project path="external/tinycompress" name="platform_external_tinycompress" groups="pdk" remote="lumine" />
   <project path="external/bouncycastle" name="platform_external_bouncycastle" remote="lumine" />
   <project path="external/e2fsprogs" name="platform_external_e2fsprogs" remote="lumine" />
@@ -59,6 +65,7 @@
   <project path="hardware/libhardware" name="platform_hardware_libhardware" remote="lumine" />
   <project path="hardware/lineage/compat" name="platform_hardware_lineage_compat" remote="lumine"/>
   <project path="hardware/lineage/interfaces" name="platform_hardware_lineage_interfaces" remote="lumine"/>
+  <project path="hardware/nxp/secure_element" name="platform_hardware_nxp_secure_element" remote="lumine" />
   <project path="hardware/qcom-caf/common" name="platform_hardware_qcom-caf_common" groups="qcom" remote="lumine">
     <!-- add guard for AOSP hardware/qcom dir -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
@@ -82,12 +89,15 @@
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8750/Android.bp" />
   </project>
+  <project path="hardware/st/nfc" name="platform_hardware_st_nfc" remote="lumine" />
 
   <!-- packages -->
+  <project path="packages/apps/ContactsPicker" name="platform_packages_apps_ContactsPicker" remote="lumine" />
   <project path="packages/apps/DocumentsUI" name="platform_packages_apps_DocumentsUI" remote="lumine" />
   <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" remote="lumine" />
   <project path="packages/apps/Settings" name="platform_packages_apps_Settings" remote="lumine" />
   <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="lumine" />
+  <project path="packages/apps/TV" name="platform_packages_apps_TV" remote="lumine" />
   <project path="packages/apps/Updater" name="platform_packages_apps_Updater" remote="lumine" />
   <project path="packages/apps/WallpaperPicker2" name="platform_packages_apps_WallpaperPicker2" remote="lumine" />
   <project path="packages/modules/adb" name="platform_packages_modules_adb" remote="lumine" />
@@ -95,6 +105,11 @@
   <project path="packages/modules/Connectivity" name="platform_packages_modules_Connectivity" remote="lumine" />
   <project path="packages/modules/Nfc" name="platform_packages_modules_Nfc" remote="lumine" />
   <project path="packages/modules/UprobeStats" name="platform_packages_modules_UprobeStats" remote="lumine" />
+  <project path="packages/modules/Uwb" name="platform_packages_modules_Uwb" remote="lumine" />
+  <project path="packages/modules/Wifi" name="platform_packages_modules_Wifi" remote="lumine" />
+  <project path="packages/providers/ContactsProvider" name="platform_packages_providers_ContactsProvider" remote="lumine" />
+  <project path="packages/providers/MediaProvider" name="platform_packages_providers_MediaProvider" remote="lumine" />
+  <project path="packages/providers/TelephonyProvider" name="platform_packages_providers_TelephonyProvider" remote="lumine" />
   <project path="packages/services/Telecomm" name="platform_packages_services_Telecomm" remote="lumine" />
   <project path="packages/services/Telephony" name="platform_packages_services_Telephony" remote="lumine" />
 
