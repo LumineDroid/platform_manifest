@@ -13,6 +13,9 @@
   <project path="external/unrar" name="LineageOS/android_external_unrar" remote="lineage" />
   <project path="external/vim" name="LineageOS/android_external_vim" remote="lineage" />
 
+  <!-- frameworks -->
+  <project path="frameworks/opt/telephony" name="LineageOS/android_frameworks_opt_telephony" remote="lineage" />
+
   <!-- extract utils -->
   <project path="prebuilts/extract-tools" name="LineageOS/android_prebuilts_extract-tools" clone-depth="1" remote="lineage" revision="lineage-23.2" />
   <project path="tools/extract-utils" name="LineageOS/android_tools_extract-utils" remote="lineage" revision="lineage-23.2" />
@@ -43,12 +46,18 @@
   <project path="hardware/qcom/sm7250/gps" name="LineageOS/android_hardware_qcom_sm7250_gps" groups="qcom,qcom_sm7250" remote="lineage"/>
   <project path="hardware/qcom/sm8150/display" name="LineageOS/android_hardware_qcom_sm8150_display" groups="qcom,qcom_sm8150" remote="lineage"/>
   <project path="hardware/qcom/sm8150/gps" name="LineageOS/android_hardware_qcom_sm8150_gps" groups="qcom,qcom_sm8150" remote="lineage"/>
+  <project path="hardware/nxp/nfc" name="LineageOS/android_hardware_nxp_nfc" remote="lineage" />
 
   <!-- packages -->
   <project path="packages/apps/Aperture" name="LineageOS/android_packages_apps_Aperture" remote="lineage" />
   <project path="packages/apps/AudioFX" name="LineageOS/android_packages_apps_AudioFX" remote="lineage" />
+  <project path="packages/apps/Car/Settings" name="LineageOS/android_packages_apps_Car_Settings" remote="lineage" />
   <project path="packages/apps/EuiccPolicy" name="LineageOS/android_packages_apps_EuiccPolicy" remote="lineage"/>
+  <project path="packages/apps/TvSettings" name="LineageOS/android_packages_apps_TvSettings" remote="lineage"/>
+  <project path="packages/modules/Telephony" name="LineageOS/android_packages_modules_Telephony" remote="lineage"/>
+  <project path="packages/providers/DownloadProvider" name="LineageOS/android_packages_providers_DownloadProvider" remote="lineage"/>
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="lineage" />
+  <project path="packages/services/BuiltInPrintService" name="LineageOS/android_packages_services_BuiltInPrintService" remote="lineage" />
 
   <!-- QCOM additions -->
   <project path="device/qcom/sepolicy" name="LineageOS/android_device_qcom_sepolicy" groups="qcom,qssi" revision="lineage-23.2" remote="lineage" />
@@ -145,4 +154,7 @@
   <project path="vendor/qcom/opensource/usb" name="LineageOS/android_vendor_qcom_opensource_usb" groups="qcom,pakala-vendor" remote="lineage"/>
   <project path="vendor/qcom/opensource/vibrator" name="LineageOS/android_vendor_qcom_opensource_vibrator" groups="qcom,pakala-vendor" remote="lineage"/>
 
+  <!-- system -->
+  <project path="system/libfmq" name="LineageOS/android_system_libfmq" remote="lineage" />
+  <project path="system/libufdt" name="LineageOS/android_system_libufdt" remote="lineage" />
 </manifest>
