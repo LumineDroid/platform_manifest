@@ -142,5 +142,6 @@
   <project path="vendor/pixel/gms" name="platform_vendor_pixel_gms" remote="lumine-codeberg" />
   <project path="vendor/pixel/prebuilts" name="platform_vendor_pixel_prebuilts" remote="lumine-codeberg" />
   <project path="vendor/pixel/sounds" name="platform_vendor_pixel_sounds" remote="lumine-codeberg" />
+  <project path="vendor/preference" name="platform_vendor_preference" remote="lumine" />
   <project path="vendor/products" name="platform_vendor_products" remote="lumine-devices" />
 </manifest>
