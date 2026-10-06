@@ -41,6 +41,7 @@
   <project path="packages/apps/Aperture" name="LineageOS/android_packages_apps_Aperture" remote="lineage" />
   <project path="packages/apps/AudioFX" name="LineageOS/android_packages_apps_AudioFX" remote="lineage" />
   <project path="packages/apps/Car/Settings" name="LineageOS/android_packages_apps_Car_Settings" remote="lineage" />
+  <project path="packages/apps/ColumbusService" name="crdroidandroid/android_packages_apps_ColumbusService" remote="github" revision="17.0" />
   <project path="packages/apps/EuiccPolicy" name="LineageOS/android_packages_apps_EuiccPolicy" remote="lineage"/>
   <project path="packages/modules/Telephony" name="LineageOS/android_packages_modules_Telephony" remote="lineage"/>
   <project path="packages/providers/DownloadProvider" name="LineageOS/android_packages_providers_DownloadProvider" remote="lineage"/>
