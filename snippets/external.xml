@@ -42,7 +42,6 @@
   <project path="packages/apps/AudioFX" name="LineageOS/android_packages_apps_AudioFX" remote="lineage" />
   <project path="packages/apps/Car/Settings" name="LineageOS/android_packages_apps_Car_Settings" remote="lineage" />
   <project path="packages/apps/EuiccPolicy" name="LineageOS/android_packages_apps_EuiccPolicy" remote="lineage"/>
-  <project path="packages/apps/TvSettings" name="LineageOS/android_packages_apps_TvSettings" remote="lineage"/>
   <project path="packages/modules/Telephony" name="LineageOS/android_packages_modules_Telephony" remote="lineage"/>
   <project path="packages/providers/DownloadProvider" name="LineageOS/android_packages_providers_DownloadProvider" remote="lineage"/>
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="lineage" />
