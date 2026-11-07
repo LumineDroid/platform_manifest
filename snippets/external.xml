@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <!-- development -->
+  <project path="development" name="LineageOS/android_development" remote="lineage" />
+
   <!-- external -->
+  <project path="external/aac" name="LineageOS/android_external_aac" remote="lineage" />
+  <project path="external/avb" name="LineageOS/android_external_avb" remote="lineage" />
   <project path="external/bash" name="LineageOS/android_external_bash" remote="lineage" />
+  <project path="external/hplip" name="LineageOS/android_external_hplip" remote="lineage" />
   <project path="external/htop" name="LineageOS/android_external_htop" remote="lineage" />
   <project path="external/json-c" name="LineageOS/android_external_json-c" groups="qcom,qssi" remote="lineage" />
   <project path="external/libncurses" name="LineageOS/android_external_libncurses" remote="lineage" />
+  <project path="external/libopenapv" name="LineageOS/android_external_libopenapv" remote="lineage" />
   <project path="external/nano" name="LineageOS/android_external_nano" remote="lineage" />
   <project path="external/ntfs-3g" name="LineageOS/android_external_ntfs-3g" remote="lineage" />
   <project path="external/openssh" name="LineageOS/android_external_openssh" groups="pdk" remote="lineage" />
   <project path="external/rsync" name="LineageOS/android_external_rsync" remote="lineage" />
+  <project path="external/tremolo" name="LineageOS/android_external_tremolo" remote="lineage" />
   <project path="external/unrar" name="LineageOS/android_external_unrar" remote="lineage" />
   <project path="external/vim" name="LineageOS/android_external_vim" remote="lineage" />
 
@@ -43,10 +51,16 @@
   <project path="packages/apps/Car/Settings" name="LineageOS/android_packages_apps_Car_Settings" remote="lineage" />
   <project path="packages/apps/ColumbusService" name="crdroidandroid/android_packages_apps_ColumbusService" remote="github" revision="17.0" />
   <project path="packages/apps/EuiccPolicy" name="LineageOS/android_packages_apps_EuiccPolicy" remote="lineage"/>
+  <project path="packages/apps/ManagedProvisioning" name="LineageOS/android_packages_apps_ManagedProvisioning" groups="pdk-fs" remote="lineage" />
+  <project path="packages/modules/IntentResolver" name="LineageOS/android_packages_modules_IntentResolver" groups="pdk,sysui-studio" remote="lineage" />
+  <project path="packages/modules/NeuralNetworks" name="LineageOS/android_packages_modules_NeuralNetworks" groups="pdk-cw-fs,pdk-fs" remote="lineage" />
+  <project path="packages/modules/Profiling" name="LineageOS/android_packages_modules_Profiling" groups="pdk" remote="lineage" />
   <project path="packages/modules/Telephony" name="LineageOS/android_packages_modules_Telephony" remote="lineage"/>
   <project path="packages/providers/DownloadProvider" name="LineageOS/android_packages_providers_DownloadProvider" remote="lineage"/>
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="lineage" />
+  <project path="packages/services/Mms" name="LineageOS/android_packages_services_Mms" remote="lineage"/>
   <project path="packages/services/BuiltInPrintService" name="LineageOS/android_packages_services_BuiltInPrintService" remote="lineage" />
+  <project path="packages/services/Iwlan" name="LineageOS/android_packages_services_Iwlan" groups="pdk-cw-fs,pdk-fs" remote="lineage" />
 
   <!-- QCOM additions -->
   <project path="device/qcom/sepolicy" name="LineageOS/android_device_qcom_sepolicy" groups="qcom,qssi" revision="lineage-24.0" remote="lineage" />
@@ -138,6 +152,11 @@
   <project path="vendor/qcom/opensource/vibrator" name="LineageOS/android_vendor_qcom_opensource_vibrator" groups="qcom,pakala-vendor" remote="lineage"/>
 
   <!-- system -->
+  <project path="system/gsid" name="LineageOS/android_system_gsid" groups="pdk" remote="lineage" />
   <project path="system/libfmq" name="LineageOS/android_system_libfmq" remote="lineage" />
   <project path="system/libufdt" name="LineageOS/android_system_libufdt" remote="lineage" />
+
+  <!-- trusty -->
+  <project path="trusty/user/base" name="LineageOS/android_trusty_user_base" groups="trusty,pdk" remote="lineage" />
+
 </manifest>

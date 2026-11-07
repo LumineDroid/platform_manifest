@@ -4,7 +4,6 @@
   <!-- root -->
   <project path="art" name="platform_art" remote="lumine" />
   <project path="bionic" name="platform_bionic" remote="lumine" />
-  <project path="development" name="platform_development" remote="lumine" />
   <project path="kernel/configs" name="platform_kernel_configs" remote="lumine" />
   <project path="manifest" name="platform_manifest" remote="lumine" />
   <project path="official_devices" name="official_devices" remote="lumine-devices" />
