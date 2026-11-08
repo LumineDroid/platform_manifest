@@ -156,6 +156,7 @@
   <project path="system/libfmq" name="LineageOS/android_system_libfmq" remote="lineage" />
   <project path="system/libufdt" name="LineageOS/android_system_libufdt" remote="lineage" />
   <project path="system/memory/libion" name="LineageOS/android_system_memory_libion" groups="pdk" remote="lineage" />
+  <project path="system/memory/libdmabufheap" name="LineageOS/android_system_memory_libdmabufheap" groups="pdk" remote="lineage" />
 
   <!-- trusty -->
   <project path="trusty/user/base" name="LineageOS/android_trusty_user_base" groups="trusty,pdk" remote="lineage" />
