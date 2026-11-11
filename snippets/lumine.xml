@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="lumine"
+           fetch="https://github.com/LumineDroid"
+           revision="refs/heads/canna" />
+
+  <remote  name="lumine-devices"
+           fetch="https://github.com/LumineDroid-Devices"
+           revision="refs/heads/canna" />
+
+  <!-- root -->
+  <project path="manifest" name="platform_manifest" remote="lumine" />
+
+  <!-- bootable -->
+  <project path="bootable/recovery" name="platform_bootable_recovery" groups="pdk" remote="lumine"/>
+
+  <!-- build -->
+  <project path="build/make" name="platform_build" groups="pdk,sysui-studio" remote="lumine" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="platform_build_soong" groups="pdk,tradefed,sysui-studio" remote="lumine" />
+
+  <!-- device -->
+  <project path="device/lineage/sepolicy" name="platform_device_lineage_sepolicy" remote="lumine" />
+
+  <!-- frameworks -->
+  <project path="frameworks/av" name="platform_frameworks_av" groups="pdk,sysui-studio" remote="lumine" />
+  <project path="frameworks/base" name="platform_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="lumine" />
+  <project path="frameworks/native" name="platform_frameworks_native" groups="pdk" remote="lumine" />
+
+  <!-- packages -->
+  <project path="packages/apps/Launcher3" name="platform_packages_apps_Launcher3" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="lumine" />
+  <project path="packages/apps/LineageParts" name="platform_packages_apps_LumineParts" remote="lumine" />
+  <project path="packages/apps/LumineSettings" name="platform_packages_apps_LumineSettings" remote="lumine" />
+  <project path="packages/apps/Settings" name="platform_packages_apps_Settings" groups="pdk-fs" remote="lumine" />
+  <project path="packages/apps/Updater" name="platform_packages_apps_Updater" remote="lumine"/>
+
+  <!-- sdk -->
+  <project path="lineage-sdk" name="platform_lumine-sdk" remote="lumine" />
+
+  <!-- system -->
+  <project path="system/core" name="platform_system_core" groups="pdk" remote="lumine" />
+  <project path="system/sepolicy" name="platform_system_sepolicy" groups="pdk" remote="lumine" />
+
+  <!-- vendor -->
+  <project path="vendor/lineage" name="platform_vendor_lumine" remote="lumine" revision="bynx-lumine" />
+</manifest>
